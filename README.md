@@ -4,7 +4,7 @@ Welcome to **Phone Hunt**, a web application that allows users to search for and
 
 ## Live Demo
 
-You can view the live demo of this project [here](https://sunnykumar-code.github.io/Phone_Hunt/).
+You can view the live demo of this project [here](https://phonehunt-search.netlify.app/).
 
 ## Features
 

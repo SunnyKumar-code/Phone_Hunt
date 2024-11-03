@@ -48,6 +48,14 @@ function renderPhones(phones) {
     });
   }
 }
+let showBtn = document.querySelectorAll('#show-btn');
+for(phone of showBtn){
+    phone.addEventListener('click', () => {
+      document.getElementById('popup-description').innerText = "There are many variations of passages of available, but the majority have suffered"; 
+      document.getElementById('popup').style.display = 'flex';
+    });
+  
+}
 
 document.querySelector('.close-btn').addEventListener('click', () => {
   document.getElementById('popup').style.display = 'none';

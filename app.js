@@ -9,7 +9,7 @@ async function phoneSearch() {
   let data = await res.json();
   let phonearr = data.data;
 
-  for (let phone of phonearr) {
+  for (phone of phonearr) {
     let box = document.createElement("div");
     box.className = "phone-item";
     box.innerHTML = `
@@ -24,11 +24,21 @@ async function phoneSearch() {
     showBtn.addEventListener("click", () => {
       document.getElementById('popup-img').src = phone.image;
       document.getElementById('popup-title').innerText = phone.phone_name;
-      document.getElementById('popup-description').innerText = "Detailed description goes here."; // Update with actual details
+      document.getElementById('popup-description').innerText = "There are many variations of passages of available, but the majority have suffered"; 
       document.getElementById('popup').style.display = 'flex';
     });
   }
 }
+
+let showBtn = document.querySelectorAll('#show-btn');
+for(phone of showBtn){
+    phone.addEventListener('click', () => {
+      document.getElementById('popup-description').innerText = "There are many variations of passages of available, but the majority have suffered"; 
+      document.getElementById('popup').style.display = 'flex';
+    });
+  
+}
+
 
 document.querySelector('.close-btn').addEventListener('click', () => {
   document.getElementById('popup').style.display = 'none';

@@ -266,6 +266,28 @@ footer{
     cursor: pointer;
   }
   
+  #showAllBtn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #A6ADBA;
+    font-weight: 600;
+    background-color: #5d19db;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+  }
+  
+  #showAllBtn:hover {
+    background-color: #7548f0;
+  }
+  
+  #showAllBtn:active {
+    background-color: #cbd1db;
+    color: #1D2735;
+  }
   
 
 @media (max-width: 770px) {
